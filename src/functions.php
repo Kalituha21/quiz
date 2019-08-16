@@ -1,0 +1,8 @@
+<?php
+if (!function_exists('redirect')) {
+    function redirect(string $target = '/')
+    {
+        header("location: $target");
+        die;
+    }
+}
